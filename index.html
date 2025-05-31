@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Virtual Library</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- ..............header.............. -->
@@ -43,84 +43,156 @@
                 <p>While fiction explores what could be, non-fiction reveals what is. These books dive into the facts, emotions, and experiences of real people and events—bridging knowledge and human experience in powerful ways.</p>
                 <p>Click on any title to uncover a world of facts, wisdom, and real-life journeys. Each non-fiction book offers not just information, but perspective—shaping how we think, feel, and understand the world around us.</p>
                 <br><br>
+                <section id="genre-section-1">
+                    <h2>Genre of Non-Fictional Novels </h2>
+                    <nav class="genre-list">
+                        <a href="#biography_autobiography">Biography/Autobiography</a>
+                        <a href="#memoir">Memoir</a>
+                        <a href="#self_help">Self-Help</a>
+                        <a href="#history">History</a>
+                        <a href="#science_technology">Science/Technology</a>
+                        <a href="#spirituality">Spirituality</a>
+                        <a href="#true Crime">True Crime</a>
+                        <a href="#politics">Politics</a>
+                        <a href="#psychology">Psychology</a>
+                        <a href="#philosophy">Philosophy</a>
+                        <a href="#business">Business</a>
+                    </nav>
+                </section>
                 <div class="book"> <!-- Book 1 -->
-                    <div class="book-title" onclick="toggleDetails('details1')">Sapiens: A Brief History of Humankind</div>
+                    <div>
+                        <h3 class="book-title">Sapiens: A Brief History of Humankind</h3>
+                        <p class="book-author"><strong>Author: </strong>Yuval Noah Harari</p>
+                        <img src="https://via.placeholder.com/300x400?text=Book+1" alt="Sapiens: A Brief History of Humankind">
+                    </div>
+                    <br>
+                    <button class="detail-btn" onclick="toggleDetail(this)">Show Details</button>
                     <div id="details1" class="book-details">
-                        <p><strong>Author:</strong>Yuval Noah Harari</p>
-                        <p><strong>Genre:</strong>History, Anthropology, Philosophy</p>
-                        <p><strong>Main Character:</strong>Homo sapiens (conceptual), Cognitive Revolution, Agricultural Revolution, Scientific Revolution</p>
-                        <p><strong>Summary:</strong> Explores the history of Homo sapiens from the Stone Age to the modern era, analyzing how biology and culture shaped human civilization.</p>
-                        <p><strong>Quote:</strong>"You could never convince a monkey to give you a banana by promising him limitless bananas after death in monkey heaven."</p>
+                        <article class="details">
+                            <p><strong>Genre: </strong>History, Anthropology, Philosophy</p>
+                            <p><strong>Main Character: </strong>Homo sapiens (conceptual), Cognitive Revolution, Agricultural Revolution, Scientific Revolution</p>
+                            <p><strong>Summary: </strong> Explores the history of Homo sapiens from the Stone Age to the modern era, analyzing how biology and culture shaped human civilization.</p>
+                            <p><strong>Quote: </strong>"You could never convince a monkey to give you a banana by promising him limitless bananas after death in monkey heaven."</p>
+                        </article>
                     </div>
                 </div>
                 <div class="book"> <!-- Book 2 -->
-                    <div class="book-title" onclick="toggleDetails('details2')">Becoming</div>
+                    <div>
+                        <h3 class="book-title">Becoming</h3>
+                        <p class="book-author"><strong>Author: </strong>Michelle Obama</p>
+                        <img src="https://via.placeholder.com/300x400?text=Book+1" alt="Becoming">
+                    </div>
+                    <br>
+                    <button class="detail-btn" onclick="toggleDetail(this)">Show Details</button>l,
                     <div id="details2" class="book-details">
-                        <p><strong>Author:</strong>Michelle Obama</p>
-                        <p><strong>Genre:</strong>Autobiography/Biography</p>
-                        <p><strong>Main Character:</strong>Michelle Obama, Barack Obama, Marian Robinson, Craig Robinson</p>
-                        <p><strong>Summary:</strong>A memoir by the former First Lady of the United States, sharing her journey from a working-class childhood to life in the White House.</p>
-                        <p><strong>Quote:</strong>"Your story is what you have, what you will always have. It is something to own."</p>
+                        <article class="details">
+                            <p><strong>Genre: </strong>Autobiography/Biography</p>
+                            <p><strong>Main Character: </strong>Michelle Obama, Barack Obama, Marian Robinson, Craig Robinson</p>
+                            <p><strong>Summary: </strong>A memoir by the former First Lady of the United States, sharing her journey from a working-class childhood to life in the White House.</p>
+                            <p><strong>Quote: </strong>"Your story is what you have, what you will always have. It is something to own."</p>
+                        </article>
                     </div>
                 </div>
                 <div class="book"> <!-- Book 3 -->
-                    <div class="book-title" onclick="toggleDetails('details3')">Educated</div>
-                    <div id="details3" class="book-details">
-                        <p><strong>Author:</strong>Tara Westover</p>
-                        <p><strong>Genre:</strong> Memoir</p>
-                        <p><strong>Main Character:</strong> Tara Westover, Gene Westover, Faye Westover, Tyler Westover</p>
-                        <p><strong>Summary:</strong> A powerful memoir of a woman who escapes her survivalist family in rural Idaho through education, ultimately earning a PhD from Cambridge University.</p>
-                        <p><strong>Quote:</strong>"You can love someone and still choose to say goodbye to them."</p>
+                    <div>
+                        <h3 class="book-title">Educated</h3>
+                        <p class="book-author"><strong>Author :</strong>Tara Westover</p>
+                        <img src="https://via.placeholder.com/300x400?text=Book+1" alt="Educated">
                     </div>
-                </div> 
+                    <br>
+                    <button class="detail-btn" onclick="toggleDetail(this)">Show Details</button>
+                    <div id="details3" class="book-details">
+                        <article class="details">
+                            <p><strong>Genre: </strong> Memoir</p>
+                            <p><strong>Main Character: </strong> Tara Westover, Gene Westover, Faye Westover, Tyler Westover</p>
+                            <p><strong>Summary: </strong> A powerful memoir of a woman who escapes her survivalist family in rural Idaho through education, ultimately earning a PhD from Cambridge University.</p>
+                            <p><strong>Quote: </strong>"You can love someone and still choose to say goodbye to them."</p>
+                        </article>
+                    </div>
+                </div>
                 <div class="book"> <!-- Book 4 -->
-                    <div class="book-title" onclick="toggleDetails('details4')">The Diary of a Young Girl</div>
+                    <div>
+                        <h3 class="book-title">The Diary of a Young Girl</h3>
+                        <p class="book-author"><strong>Author: </strong> Anne Frank</p>
+                        <img src="https://via.placeholder.com/300x400?text=Book+1" alt="The Diary of a Young Girl">
+                    </div>
+                    <br>
+                    <button class="detail-btn" onclick="toggleDetail(this)">Show Details</button>
                     <div id="details4" class="book-details">
-                        <p><strong>Author:</strong> Anne Frank</p>
-                        <p><strong>Genre:</strong> Journal</p>
-                        <p><strong>Main Character:</strong> Anne Frank, Otto Frank, Margot Frank, The Van Pels family</p>
-                        <p><strong>Summary:</strong> The moving diary of a Jewish girl hiding from the Nazis during WWII, filled with thoughts, fears, and hopes during a dark time in history.</p>
-                        <p><strong>Quote:</strong> "In spite of everything, I still believe that people are really good at heart."</p>
+                        <article class="details">
+                            <p><strong>Genre: </strong> Journal</p>
+                            <p><strong>Main Character: </strong> Anne Frank, Otto Frank, Margot Frank, The Van Pels family</p>
+                            <p><strong>Summary: </strong> The moving diary of a Jewish girl hiding from the Nazis during WWII, filled with thoughts, fears, and hopes during a dark time in history.</p>
+                            <p><strong>Quote: </strong> "In spite of everything, I still believe that people are really good at heart."</p>
+                        </article>
                     </div>
                 </div>
                 <div class="book"> <!-- Book 5 -->
-                    <div class="book-title" onclick="toggleDetails('details5')">Man's Search for Meaning</div>
+                    <div>
+                        <h3 class="book-title">Man's Search for Meaning</h3>
+                        <p class="book-author"><strong>Author: </strong> Viktor E. Frankl</p>
+                        <img src="https://via.placeholder.com/300x400?text=Book+1" alt="Man's Search for Meaning">
+                    </div>
+                    <br>
+                    <button class="detail-btn" onclick="toggleDetail(this)">Show Details</button>
                     <div id="details5" class="book-details">
-                        <p><strong>Author:</strong> Viktor E. Frankl</p>
-                        <p><strong>Genre:</strong> Memoir</p>
-                        <p><strong>Main Character:</strong> Viktor Frankl, Fellow prisoners, Camp guards, Psychological insights</p>
-                        <p><strong>Summary:</strong> A Holocaust survivor's memoir reflecting on finding purpose in life even in the harshest conditions, blending psychological insights with personal experience.</p>
-                        <p><strong>Quote:</strong> "When we are no longer able to change a situation, we are challenged to change ourselves.""</p>
+                        <article class="details">
+                            <p><strong>Genre: </strong>Memoir</p>
+                            <p><strong>Main Character: </strong>Viktor Frankl, Fellow prisoners, Camp guards, Psychological insights</p>
+                            <p><strong>Summary: </strong>A Holocaust survivor's memoir reflecting on finding purpose in life even in the harshest conditions, blending psychological insights with personal experience.</p>
+                            <p><strong>Quote: </strong>"When we are no longer able to change a situation, we are challenged to change ourselves.""</p>
+                        </article>
                     </div>
                 </div>
                 <div class="book"> <!-- Book 6 -->
-                    <div class="book-title" onclick="toggleDetails('details6')">  Wings of Fire</div>
-                        <div id="details6" class="book-details">
-                        <p><strong>Author:</strong> A.P.J. Abdul Kalam with Arun Tiwari</p>
-                        <p><strong>Genre:</strong> </p>
-                        <p><strong>Main Character:</strong> A.P.J. Abdul Kalam, Dr. Vikram Sarabhai, Dr. Brahm Prakash, Arun Tiwari</p>
-                        <p><strong>Summary:</strong> The autobiography of India's former President and scientist, covering his early life, education, and work in Indian aerospace science.</p>
-                        <p><strong>Quote:</strong> "Dream, dream, dream. Dreams transform into thoughts and thoughts result in action."</p>
+                    <div>
+                        <h3 class="book-title">Wings of Fire</h3>
+                        <p class="book-author"><strong>Author:</strong> A.P.J. Abdul Kalam with Arun Tiwari</p>
+                        <img src="https://via.placeholder.com/300x400?text=Book+1" alt="Wings of Fire">
+                    </div>
+                    <br>
+                    <button class="detail-btn" onclick="toggleDetail(this)">Show Details</button>
+                    <div id="details6" class="book-details">
+                        <article class="details">
+                            <p><strong>Genre:</strong> </p>
+                            <p><strong>Main Character:</strong> A.P.J. Abdul Kalam, Dr. Vikram Sarabhai, Dr. Brahm Prakash, Arun Tiwari</p>
+                            <p><strong>Summary:</strong> The autobiography of India's former President and scientist, covering his early life, education, and work in Indian aerospace science.</p>
+                            <p><strong>Quote:</strong> "Dream, dream, dream. Dreams transform into thoughts and thoughts result in action."</p>
+                        </article>
                     </div>
                 </div>
                 <div class="book"> <!-- Book 7 -->
-                    <div class="book-title" onclick="toggleDetails('details7')"> Why I Am an Atheist</div>
+                    <diV>
+                        <h3 class="book-title">Why I Am an Atheist</h3>
+                        <p class="book-author"><strong>Author:</strong> Bhagat Singh</p>
+                        <img src="https://via.placeholder.com/300x400?text=Book+1" alt="Why I Am an Atheist">
+                    </diV>
+                    <br>
+                    <button class="detail-btn" onclick="toggleDetail(this)">Show Details</button>
                     <div id="details7" class="book-details">
-                        <p><strong>Author:</strong> Bhagat Singh</p>
-                        <p><strong>Genre:</strong> </p>
-                        <p><strong>Main Character:</strong> Bhagat Singh, the British colonial regime (contextually)</p>
-                        <p><strong>Summary:</strong> A brave girl discovers her hidden powers and saves the kingdom.</p>
-                        <p><strong>Quote:</strong> "I am an atheist, and I do not believe in the existence of God."</p>
+                        <article class="details">
+                            <p><strong>Genre:</strong> </p>
+                            <p><strong>Main Character:</strong> Bhagat Singh, the British colonial regime (contextually)</p>
+                            <p><strong>Summary:</strong> A brave girl discovers her hidden powers and saves the kingdom.</p>
+                            <p><strong>Quote:</strong> "I am an atheist, and I do not believe in the existence of God."</p>
+                        </article>
                     </div>
                 </div>
                 <div class="book"> <!-- Book 8 -->
-                    <div class="book-title" onclick="toggleDetails('details1')">The Discovery of India</div>
+                    <div>
+                        <h3 class="book-title">The Discovery of India</h3>
+                        <p class="book-author"><strong>Author:</strong> Jawaharlal Nehru</p>
+                        <img src="https://via.placeholder.com/300x400?text=Book+1" alt="The Discovery of India">
+                    </div>
+                    <br>
+                    <button class="detail-btn" onclick="toggleDetail(this)">Show Details</button>
                     <div id="details8" class="book-details">
-                        <p><strong>Author:</strong> Jawaharlal Nehru</p>
-                        <p><strong>Genre:</strong>y</p>
-                        <p><strong>Main Character:</strong> Jawaharlal Nehru, Indian civilization, key historical figures</p>
-                        <p><strong>Summary:</strong> Written during his imprisonment, Nehru explores India's history, culture, and spiritual heritage with deep nationalistic insight..</p>
-                        <p><strong>Quote:</strong> "Even the stars fear her fire."</p>
+                        <article class="details">
+                            <p><strong>Genre:</strong>y</p>
+                            <p><strong>Main Character:</strong> Jawaharlal Nehru, Indian civilization, key historical figures</p>
+                            <p><strong>Summary:</strong> Written during his imprisonment, Nehru explores India's history, culture, and spiritual heritage with deep nationalistic insight..</p>
+                            <p><strong>Quote:</strong> "Even the stars fear her fire."</p>
+                        </article>
                     </div>
                 </div>
             </section>
@@ -132,84 +204,157 @@
                 <p>Click on a book to explore its universe: meet characters, uncover secrets, dive into quotes, and feel the soul of the story. Whether you're in search of mystery, love, or adventure—fiction has it all.</p>
                 <p>Our virtual shelf holds stories that spark curiosity and stir emotion. These aren't just books—they're adventures waiting for your first step. Find your next favorite tale today.</p>
                 <br><br>
+                <section id="genre-section-2">
+                    <h2>Genre of Fictional Novels</h2>
+                    <nav class="genre-list">
+                        <a href="Fantasy">Fantasy</a>
+                        <a href="Sci-Fi">Sci-Fi</a>
+                        <a href="#Romance">Romance</a>
+                        <a href="#Mystery">Mystery</a>
+                        <a href="#Thriller">Thriller</a>
+                        <a href="#Horror">Horror</a>
+                        <a href="#his-fi">his-fi</a>
+                        <a href="#Adventure">Adventure</a>
+                        <a href="#Children's Fiction">Children's Fiction</a>
+                        <a href="#YA">YA</a>
+                        <a href="#Magical Realism">Magical Realism</a>
+                    </nav>
+                </section>
+                <br><br>
                 <div class="book"> <!-- Book 1 -->
-                    <div class="book-title" onclick="toggleDetails('details11')">1984</div>
+                    <div>
+                        <h3 class="book-title">1984</h3>
+                        <p class="book-author"><strong>Author:</strong> George Orwell</p>
+                        <img src="https://via.placeholder.com/300x400?text=Book+1" alt="1984">
+                    </div>
+                    <br>
+                    <button class="detail-btn" onclick="toggleDetail(this)">Show Details</button>
                     <div id="details11" class="book-details">
-                        <p><strong>Author:</strong> George Orwell</p>
-                        <p><strong>Genre:</strong> Murder Mystery</p>
-                        <p><strong>Main Character:</strong> Winston Smith, Julia, O'Brien, Big Brother</p>
-                        <p><strong>Summary:</strong> A dystopian novel set in a totalitarian society ruled by Big Brother, where independent thinking is a crime.</p>
-                        <p><strong>Quote:</strong> "Big Brother is Watching You."</p>
+                        <article class="details">
+                            <p><strong>Genre:</strong> Murder Mystery</p>
+                            <p><strong>Main Character:</strong> Winston Smith, Julia, O'Brien, Big Brother</p>
+                            <p><strong>Summary:</strong> A dystopian novel set in a totalitarian society ruled by Big Brother, where independent thinking is a crime.</p>
+                            <p><strong>Quote:</strong> "Big Brother is Watching You."</p>
+                        </article>
                     </div>
                 </div>
                 <div class="book"> <!-- Book 2 -->
-                    <div class="book-title" onclick="toggleDetails('details12')">The Great Gatsby</div>
+                    <div>
+                        <h3 class="book-title">The Great Gatsby</h3>
+                        <p class="book-author"><strong>Author:</strong>  F. Scott Fitzgerald</p>
+                        <img src="https://via.placeholder.com/300x400?text=Book+1" alt="The Great Gatsby">
+                    </div>
+                    <br>
+                    <button class="detail-btn" onclick="toggleDetail(this)">Show Details</button>
                     <div id="details12" class="book-details">
-                        <p><strong>Author:</strong>  F. Scott Fitzgerald</p>
-                        <p><strong>Genre:</strong> Mystery</p>
-                        <p><strong>Main Character:</strong> Detective Neil Carter</p>
-                        <p><strong>Summary:</strong> A critique of the American Dream, set in the Roaring Twenties, told through the eyes of Nick Carraway and centered on the mysterious Jay Gatsby.</p>
-                        <p><strong>Quote:</strong> "So we beat on, boats against the current, borne back ceaselessly into the past."</p>
+                        <article class="details">
+                            <p><strong>Genre:</strong> Mystery</p>
+                            <p><strong>Main Character:</strong> Detective Neil Carter</p>
+                            <p><strong>Summary:</strong> A critique of the American Dream, set in the Roaring Twenties, told through the eyes of Nick Carraway and centered on the mysterious Jay Gatsby.</p>
+                            <p><strong>Quote:</strong> "So we beat on, boats against the current, borne back ceaselessly into the past."</p>
+                        </article>
                     </div>
                 </div>
                 <div class="book"> <!-- Book 3 -->
-                    <div class="book-title" onclick="toggleDetails('details13')">Harry Potter and the Sorcerer's Stone</div>
+                    <div>
+                        <h3 class="book-title">Harry Potter and the Sorcerer's Stone</h3>
+                        <p class="book-author"><strong>Author:</strong>  J.K. Rowling</p>
+                        <img src="https://via.placeholder.com/300x400?text=Book+1" alt="Harry Potter and the Sorcerer's Stone">
+                    </div>
+                    <br>
+                    <button class="detail-btn" onclick="toggleDetail(this)">Show Details</button>
                     <div id="details13" class="book-details">
-                        <p><strong>Author:</strong>  J.K. Rowling</p>
-                        <p><strong>Genre:</strong> Fantasy</p>
-                        <p><strong>Main Character:</strong> Harry Potter, Hermione Granger, Ron Weasley, Albus Dumbledore</p>
-                        <p><strong>Summary:</strong> The first book in the Harry Potter series, where a young boy discovers he's a wizard and attends Hogwarts School of Witchcraft and Wizardry.</p>
-                        <p><strong>Quote:</strong> "It does not do to dwell on dreams and forget to live."</p>
+                        <article class="details">
+                            <p><strong>Genre:</strong> Fantasy</p>
+                            <p><strong>Main Character:</strong> Harry Potter, Hermione Granger, Ron Weasley, Albus Dumbledore</p>
+                            <p><strong>Summary:</strong> The first book in the Harry Potter series, where a young boy discovers he's a wizard and attends Hogwarts School of Witchcraft and Wizardry.</p>
+                            <p><strong>Quote:</strong> "It does not do to dwell on dreams and forget to live."</p>
+                        </article>
                     </div>
                 </div>
                 <div class="book"> <!-- Book 4 -->
-                    <div class="book-title" onclick="toggleDetails('details14')">Pride and Prejudice</div>
+                    <div>
+                        <h3 class="book-title">Pride and Prejudice</h3>
+                        <p class="book-author"><strong>Author:</strong>  Jane Austen</p>
+                        <img src="https://via.placeholder.com/300x400?text=Book+1" alt="Pride and Prejudice">
+                    </div>
+                    <br>
+                    <button class="detail-btn" onclick="toggleDetail(this)">Show Details</button>
                     <div id="details14" class="book-details">
-                        <p><strong>Author:</strong>  Jane Austen</p>
-                        <p><strong>Genre:</strong> Romance</p>
-                        <p><strong>Main Character:</strong>Elizabeth Bennet, Fitzwilliam Darcy, Jane Bennet, Mr. Bingley</p>
-                        <p><strong>Summary:</strong> A romantic novel that explores themes of love, social standing, and family through the story of Elizabeth Bennet and Mr. Darcy.</p>
-                        <p><strong>Quote:</strong> "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife."</p>
+                        <article class="details">
+                            <p><strong>Genre:</strong> Romance</p>
+                            <p><strong>Main Character:</strong>Elizabeth Bennet, Fitzwilliam Darcy, Jane Bennet, Mr. Bingley</p>
+                            <p><strong>Summary:</strong> A romantic novel that explores themes of love, social standing, and family through the story of Elizabeth Bennet and Mr. Darcy.</p>
+                            <p><strong>Quote:</strong> "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife."</p>
+                        </article>
                     </div>
                 </div>
                 <div class="book"> <!-- Book 5 -->
-                    <div class="book-title" onclick="toggleDetails('details15')">The Lord of the Rings: The Fellowship of the Ring</div>
+                    <div>
+                        <h3 class="book-title">The Lord of the Rings: The Fellowship of the Ring</h3>
+                        <p class="book-author"><strong>Author:</strong> J.R.R. Tolkien</p>
+                        <img src="https://via.placeholder.com/300x400?text=Book+1" alt="The Lord of the Rings: The Fellowship of the Ring">
+                    </div>
+                    <br>
+                    <button class="detail-btn" onclick="toggleDetail(this)">Show Details</button>
                     <div id="details15" class="book-details">
-                        <p><strong>Author:</strong> J.R.R. Tolkien</p>
-                        <p><strong>Genre:</strong> Fantasy</p>
-                        <p><strong>Main Character:</strong> Frodo Baggins, Gandalf, Aragorn, Samwise Gamgee, Legolas</p>
-                        <p><strong>Summary:</strong> The beginning of an epic quest to destroy the One Ring and defeat the Dark Lord Sauron.</p>
-                        <p><strong>Quote:</strong>"Even the smallest person can change the course of the future."</p>
+                        <article class="details">
+                            <p><strong>Genre:</strong> Fantasy</p>
+                            <p><strong>Main Character:</strong> Frodo Baggins, Gandalf, Aragorn, Samwise Gamgee, Legolas</p>
+                            <p><strong>Summary:</strong> The beginning of an epic quest to destroy the One Ring and defeat the Dark Lord Sauron.</p>
+                            <p><strong>Quote:</strong>"Even the smallest person can change the course of the future."</p>
+                        </article>
                     </div>
                 </div>
                 <div class="book"> <!-- Book 6 -->
-                    <div class="book-title" onclick="toggleDetails('details16')">The Silent Patient</div>
+                    <div>
+                        <h3 class="book-title">The Silent Patient</h3>
+                        <p class="book-author"><strong>Author:</strong> Alex Michaelides</p>
+                        <img src="https://via.placeholder.com/300x400?text=Book+1" alt="The Silent Patient">
+                    </div>
+                    <br>
+                    <button class="detail-btn" onclick="toggleDetail(this)">Show Details</button>
                     <div id="details16" class="book-details">
-                        <p><strong>Author:</strong> Alex Michaelides</p>
-                        <p><strong>Genre:</strong> Fantasy</p>
-                        <p><strong>Main Character:</strong> Alicia Berenson, Theo Faber, Gabriel Berenson</p>
-                        <p><strong>Summary:</strong> A psychological thriller about a woman who stops speaking after being accused of murdering her husband, and the psychotherapist determined to uncover her secret.</p>
-                        <p><strong>Quote:</strong> "Alicia Berenson was thirty-three years old when she killed her husband."</p>
+                        <article class="details">
+                            <p><strong>Genre:</strong> Fantasy</p>
+                            <p><strong>Main Character:</strong> Alicia Berenson, Theo Faber, Gabriel Berenson</p>
+                            <p><strong>Summary:</strong> A psychological thriller about a woman who stops speaking after being accused of murdering her husband, and the psychotherapist determined to uncover her secret.</p>
+                            <p><strong>Quote:</strong> "Alicia Berenson was thirty-three years old when she killed her husband."</p>
+                        </article>
                     </div>
                 </div>
                 <div class="book"> <!-- Book 7 -->
-                    <div class="book-title" onclick="toggleDetails('details17')">The Woman in the Library</div>
+                    <div>
+                        <h3 class="book-title">The Woman in the Library</h3>
+                        <p class="book-author"><strong>Author:</strong>  Sulari Gentill</p>
+                        <img src="https://via.placeholder.com/300x400?text=Book+1" alt="The Woman in the Library">
+                    </div>
+                    <br>
+                    <button class="detail-btn" onclick="toggleDetail(this)">Show Details</button>
                     <div id="details17" class="book-details">
-                        <p><strong>Author:</strong>  Sulari Gentill</p>
-                        <p><strong>Genre:</strong> Fantasy</p>
-                        <p><strong>Main Character:</strong> Freddie Kincaid, Hannah Tigone, Leo Johnson, Cain McLeod</p>
-                        <p><strong>Summary:</strong> A mystery within a mystery, where a woman hears a scream in a library and becomes entangled in a murder investigation through letters and fiction..</p>
-                        <p><strong>Quote:</strong> "The woman screams. A woman's scream cuts through the reading room. Heads turn, books are lowered."</p>
+                        <article class="details">
+                            <p><strong>Genre:</strong> Fantasy</p>
+                            <p><strong>Main Character:</strong> Freddie Kincaid, Hannah Tigone, Leo Johnson, Cain McLeod</p>
+                            <p><strong>Summary:</strong> A mystery within a mystery, where a woman hears a scream in a library and becomes entangled in a murder investigation through letters and fiction..</p>
+                            <p><strong>Quote:</strong> "The woman screams. A woman's scream cuts through the reading room. Heads turn, books are lowered."</p>
+                        </article>
                     </div>
                 </div>
                 <div class="book"> <!-- Book 8 -->
-                    <div class="book-title" onclick="toggleDetails('details18')">Then She Was Gone</div>
+                    <div>
+                        <h3 class="book-title">Then She Was Gone</h3>
+                        <p class="book-author"><strong>Author:</strong> Lisa Jewell</p>
+                        <img src="https://via.placeholder.com/300x400?text=Book+1" alt="The Woman in the Library">
+                    </div>
+                    <br>
+                    <button class="detail-btn" onclick="toggleDetail(this)">Show Details</button>
                     <div id="details18" class="book-details">
-                        <p><strong>Author:</strong>  Lisa Jewell</p>
-                        <p><strong>Genre:</strong> Fantasy</p>
-                        <p><strong>Main Character:</strong> Laurel Mack, Ellie Mack, Floyd Dunn, Poppy</p>
-                        <p><strong>Summary:</strong> A heart-wrenching mystery about a mothe's desperate search for her missing daughter and the shocking secrets she uncovers. A brave girl discovers her hidden powers and saves the kingdom.</p>
-                        <p><strong>Quote:</strong> "She was fifteen, her mother's golden girl. She had her whole life ahead of her. And then she was gone."</p>
+                        <article class="details">
+                            <p><strong>Genre:</strong> Fantasy</p>
+                            <p><strong>Main Character:</strong> Laurel Mack, Ellie Mack, Floyd Dunn, Poppy</p>
+                            <p><strong>Summary:</strong> A heart-wrenching mystery about a mothe's desperate search for her missing daughter and the shocking secrets she uncovers. A brave girl discovers her hidden powers and saves the kingdom.</p>
+                            <p><strong>Quote:</strong> "She was fifteen, her mother's golden girl. She had her whole life ahead of her. And then she was gone."</p>
+                        </article>
                     </div>
                 </div>
             </section>
@@ -217,16 +362,22 @@
     </main>
     <footer>
         <p>&copy; 2025 Virtual Library. All rights reserved.</p>
+        <p>
+            <a href="about.html">About</a> |
+            <a href="contact.html">Contact</a> |
+            <a href="privacy.html">Privacy Policy</a>
+        </p>
     </footer>
     <script>
-        function toggleDetails(id) {
-        const element = document.getElementById(id);
-            if (element.style.display === "none" || element.style.display === "") {
-                element.style.display = "block";
-            } else {
-                element.style.display = "none";
-            }
+        function toggleDetail(button) {
+            // Get the element next to the button (the <div class="details">)
+            const detail = button.nextElementSibling;
+            // Check if it's currently displayed
+            const isVisible = detail.style.display === 'block';
+            // Toggle the display
+            detail.style.display = isVisible ? 'none' : 'block';
+            // Change the button text accordingly
+            button.textContent = isVisible ? 'Show Details' : 'Hide Details';
         }
-  </script>
+    </script>
 </body>
-</html>
